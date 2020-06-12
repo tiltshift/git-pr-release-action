@@ -3,24 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "package": "ncc build lib/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "package": "ncc build lib/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grassedge/git-pr-release-action.git"
+    "url": "git+https://github.com/tiltshift/git-pr-release-action.git"
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/grassedge/git-pr-release-action/issues"
-  },
-  "homepage": "https://github.com/grassedge/git-pr-release-action#readme",
+  "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.0",
     "@actions/github": "^2.0.0",
     "@zeit/ncc": "^0.20.5",
-    "git-pr-release": "^1.0.4",
-    "moment-timezone": "^0.5.27"
+    "@octokit/rest": "^16.35.2",
+    "detect-pull-reqs": "^1.0.3",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.27",
+    "mustache": "^3.2.1"
   }
 }
