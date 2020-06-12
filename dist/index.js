@@ -14077,7 +14077,7 @@ const gitPrRelease = __webpack_require__(78);
   const labelsCsv = core.getInput('labels');
   const templatePath = core.getInput('template');
 
-  const labels = (labelsCsv || '').split(',').map(l => l.trim());
+  const labels = labelsCsv ? (labelsCsv).split(',').map(l => l.trim()) : [];
   const template = templatePath ? fs.readFileSync(templatePath, 'utf8') : null;
 
   console.log('labels', labels)
