@@ -492,7 +492,7 @@ module.exports = windowsRelease;
 /***/ (function(module, __unusedexports, __webpack_require__) {
 
 const detect = __webpack_require__(706);
-const Octokit = __webpack_require__(0);
+const { Octokit } = __webpack_require__(0)
 const messageUtils = __webpack_require__(904);
 
 module.exports = async function({ host, token, owner, repo, base, head, assign, labels, template }) {
@@ -14079,6 +14079,8 @@ const gitPrRelease = __webpack_require__(78);
 
   const labels = (labelsCsv || '').split(',').map(l => l.trim());
   const template = templatePath ? fs.readFileSync(templatePath, 'utf8') : null;
+
+  console.log('labels', labels)
 
   const tz = core.getInput('tz');
   if (tz) {
