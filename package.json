@@ -17,7 +17,7 @@
     "@zeit/ncc": "^0.20.5",
     "@octokit/rest": "^16.35.2",
     "detect-pull-reqs": "^1.0.3",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "moment-timezone": "^0.5.27",
     "mustache": "^3.2.1"
   }
